@@ -1,0 +1,297 @@
+##fileformat=VCFv4.1
+##fileDate=20180512
+##source=strelka
+##source_version=2.9.2
+##startTime=Sat May 12 20:56:41 2018
+##cmdline=/home/sdavis2/miniconda3/envs/strelka/bin/configureStrelkaSomaticWorkflow.py --normalBam ../F18FTSUSAT0015_HUMaasR/WBA/result_alignment/WBA.bam --tumorBam ../F18FTSUSAT0015_HUMaasR/T1_1A/result_alignment/T1_1A.bam --ref ../hg19/hg19.fa --runDir T1_1A_somatic
+##reference=file:///home/sdavis2/hg19/hg19.fa
+##content=strelka somatic snv calls
+##priorSomaticSnvRate=0.0001
+##Depth_chr1=141.00
+##Depth_chr10=139.00
+##Depth_chr11=141.00
+##Depth_chr11_gl000202_random=93.00
+##Depth_chr12=141.00
+##Depth_chr13=140.00
+##Depth_chr14=144.00
+##Depth_chr15=145.00
+##Depth_chr16=145.00
+##Depth_chr17=138.00
+##Depth_chr17_ctg5_hap1=64.00
+##Depth_chr17_gl000203_random=153.00
+##Depth_chr17_gl000204_random=132.00
+##Depth_chr17_gl000205_random=388.00
+##Depth_chr17_gl000206_random=70.00
+##Depth_chr18=144.00
+##Depth_chr18_gl000207_random=150.50
+##Depth_chr19=139.00
+##Depth_chr19_gl000208_random=279.00
+##Depth_chr19_gl000209_random=49.00
+##Depth_chr1_gl000191_random=81.00
+##Depth_chr1_gl000192_random=130.00
+##Depth_chr2=144.00
+##Depth_chr20=145.00
+##Depth_chr21=143.00
+##Depth_chr21_gl000210_random=78.00
+##Depth_chr22=148.00
+##Depth_chr3=141.00
+##Depth_chr4=139.00
+##Depth_chr4_ctg9_hap1=68.00
+##Depth_chr4_gl000193_random=352.00
+##Depth_chr4_gl000194_random=242.00
+##Depth_chr5=138.00
+##Depth_chr6=128.00
+##Depth_chr6_apd_hap1=19.00
+##Depth_chr6_cox_hap2=24.00
+##Depth_chr6_dbb_hap3=20.00
+##Depth_chr6_mann_hap4=19.00
+##Depth_chr6_mcf_hap5=19.00
+##Depth_chr6_qbl_hap6=20.00
+##Depth_chr6_ssto_hap7=19.00
+##Depth_chr7=141.00
+##Depth_chr7_gl000195_random=712.00
+##Depth_chr8=138.00
+##Depth_chr8_gl000196_random=68.00
+##Depth_chr8_gl000197_random=75.00
+##Depth_chr9=140.00
+##Depth_chr9_gl000198_random=92.00
+##Depth_chr9_gl000199_random=766.00
+##Depth_chr9_gl000200_random=87.00
+##Depth_chr9_gl000201_random=78.00
+##Depth_chrM=13476.50
+##Depth_chrUn_gl000211=163.00
+##Depth_chrUn_gl000212=154.00
+##Depth_chrUn_gl000213=63.00
+##Depth_chrUn_gl000214=641.00
+##Depth_chrUn_gl000215=63.00
+##Depth_chrUn_gl000216=404.00
+##Depth_chrUn_gl000217=258.00
+##Depth_chrUn_gl000218=426.00
+##Depth_chrUn_gl000219=408.00
+##Depth_chrUn_gl000220=721.00
+##Depth_chrUn_gl000221=392.00
+##Depth_chrUn_gl000222=129.00
+##Depth_chrUn_gl000223=68.00
+##Depth_chrUn_gl000224=630.00
+##Depth_chrUn_gl000225=850.00
+##Depth_chrUn_gl000226=17633.50
+##Depth_chrUn_gl000227=71.00
+##Depth_chrUn_gl000228=193.00
+##Depth_chrUn_gl000229=564.00
+##Depth_chrUn_gl000230=191.00
+##Depth_chrUn_gl000231=537.00
+##Depth_chrUn_gl000232=948.00
+##Depth_chrUn_gl000233=163.00
+##Depth_chrUn_gl000234=761.00
+##Depth_chrUn_gl000235=518.00
+##Depth_chrUn_gl000236=86.00
+##Depth_chrUn_gl000237=481.00
+##Depth_chrUn_gl000238=75.00
+##Depth_chrUn_gl000239=412.00
+##Depth_chrUn_gl000240=213.00
+##Depth_chrUn_gl000241=650.00
+##Depth_chrUn_gl000242=69.00
+##Depth_chrUn_gl000243=308.00
+##Depth_chrUn_gl000244=175.00
+##Depth_chrUn_gl000245=358.00
+##Depth_chrUn_gl000246=78.00
+##Depth_chrUn_gl000247=250.00
+##Depth_chrUn_gl000248=72.00
+##Depth_chrUn_gl000249=79.00
+##Depth_chrX=70.00
+##Depth_chrY=70.00
+##INFO=<ID=QSS,Number=1,Type=Integer,Description="Quality score for any somatic snv, ie. for the ALT allele to be present at a significantly different frequency in the tumor and normal">
+##INFO=<ID=TQSS,Number=1,Type=Integer,Description="Data tier used to compute QSS">
+##INFO=<ID=NT,Number=1,Type=String,Description="Genotype of the normal in all data tiers, as used to classify somatic variants. One of {ref,het,hom,conflict}.">
+##INFO=<ID=QSS_NT,Number=1,Type=Integer,Description="Quality score reflecting the joint probability of a somatic variant and NT">
+##INFO=<ID=TQSS_NT,Number=1,Type=Integer,Description="Data tier used to compute QSS_NT">
+##INFO=<ID=SGT,Number=1,Type=String,Description="Most likely somatic genotype excluding normal noise states">
+##INFO=<ID=SOMATIC,Number=0,Type=Flag,Description="Somatic mutation">
+##INFO=<ID=DP,Number=1,Type=Integer,Description="Combined depth across samples">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQ0,Number=1,Type=Integer,Description="Total Mapping Quality Zero Reads">
+##INFO=<ID=ReadPosRankSum,Number=1,Type=Float,Description="Z-score from Wilcoxon rank sum test of Alt Vs. Ref read-position in the tumor">
+##INFO=<ID=SNVSB,Number=1,Type=Float,Description="Somatic SNV site strand bias">
+##INFO=<ID=PNOISE,Number=1,Type=Float,Description="Fraction of panel containing non-reference noise at this site">
+##INFO=<ID=PNOISE2,Number=1,Type=Float,Description="Fraction of panel containing more than one non-reference noise obs at this site">
+##INFO=<ID=SomaticEVS,Number=1,Type=Float,Description="Somatic Empirical Variant Score (EVS) expressing the phred-scaled probability of the call being a false positive observation.">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth for tier1 (used+filtered)">
+##FORMAT=<ID=FDP,Number=1,Type=Integer,Description="Number of basecalls filtered from original read depth for tier1">
+##FORMAT=<ID=SDP,Number=1,Type=Integer,Description="Number of reads with deletions spanning this site at tier1">
+##FORMAT=<ID=SUBDP,Number=1,Type=Integer,Description="Number of reads below tier1 mapping quality threshold aligned across this site">
+##FORMAT=<ID=AU,Number=2,Type=Integer,Description="Number of 'A' alleles used in tiers 1,2">
+##FORMAT=<ID=CU,Number=2,Type=Integer,Description="Number of 'C' alleles used in tiers 1,2">
+##FORMAT=<ID=GU,Number=2,Type=Integer,Description="Number of 'G' alleles used in tiers 1,2">
+##FORMAT=<ID=TU,Number=2,Type=Integer,Description="Number of 'T' alleles used in tiers 1,2">
+##FILTER=<ID=LowEVS,Description="Somatic Empirical Variant Score (SomaticEVS) is below threshold">
+##FILTER=<ID=LowDepth,Description="Tumor or normal sample read depth at this locus is below 2">
+##contig=<ID=chrM,length=16571>
+##contig=<ID=chr1,length=249250621>
+##contig=<ID=chr2,length=243199373>
+##contig=<ID=chr3,length=198022430>
+##contig=<ID=chr4,length=191154276>
+##contig=<ID=chr5,length=180915260>
+##contig=<ID=chr6,length=171115067>
+##contig=<ID=chr7,length=159138663>
+##contig=<ID=chr8,length=146364022>
+##contig=<ID=chr9,length=141213431>
+##contig=<ID=chr10,length=135534747>
+##contig=<ID=chr11,length=135006516>
+##contig=<ID=chr12,length=133851895>
+##contig=<ID=chr13,length=115169878>
+##contig=<ID=chr14,length=107349540>
+##contig=<ID=chr15,length=102531392>
+##contig=<ID=chr16,length=90354753>
+##contig=<ID=chr17,length=81195210>
+##contig=<ID=chr18,length=78077248>
+##contig=<ID=chr19,length=59128983>
+##contig=<ID=chr20,length=63025520>
+##contig=<ID=chr21,length=48129895>
+##contig=<ID=chr22,length=51304566>
+##contig=<ID=chrX,length=155270560>
+##contig=<ID=chrY,length=59373566>
+##contig=<ID=chr1_gl000191_random,length=106433>
+##contig=<ID=chr1_gl000192_random,length=547496>
+##contig=<ID=chr4_ctg9_hap1,length=590426>
+##contig=<ID=chr4_gl000193_random,length=189789>
+##contig=<ID=chr4_gl000194_random,length=191469>
+##contig=<ID=chr6_apd_hap1,length=4622290>
+##contig=<ID=chr6_cox_hap2,length=4795371>
+##contig=<ID=chr6_dbb_hap3,length=4610396>
+##contig=<ID=chr6_mann_hap4,length=4683263>
+##contig=<ID=chr6_mcf_hap5,length=4833398>
+##contig=<ID=chr6_qbl_hap6,length=4611984>
+##contig=<ID=chr6_ssto_hap7,length=4928567>
+##contig=<ID=chr7_gl000195_random,length=182896>
+##contig=<ID=chr8_gl000196_random,length=38914>
+##contig=<ID=chr8_gl000197_random,length=37175>
+##contig=<ID=chr9_gl000198_random,length=90085>
+##contig=<ID=chr9_gl000199_random,length=169874>
+##contig=<ID=chr9_gl000200_random,length=187035>
+##contig=<ID=chr9_gl000201_random,length=36148>
+##contig=<ID=chr11_gl000202_random,length=40103>
+##contig=<ID=chr17_ctg5_hap1,length=1680828>
+##contig=<ID=chr17_gl000203_random,length=37498>
+##contig=<ID=chr17_gl000204_random,length=81310>
+##contig=<ID=chr17_gl000205_random,length=174588>
+##contig=<ID=chr17_gl000206_random,length=41001>
+##contig=<ID=chr18_gl000207_random,length=4262>
+##contig=<ID=chr19_gl000208_random,length=92689>
+##contig=<ID=chr19_gl000209_random,length=159169>
+##contig=<ID=chr21_gl000210_random,length=27682>
+##contig=<ID=chrUn_gl000211,length=166566>
+##contig=<ID=chrUn_gl000212,length=186858>
+##contig=<ID=chrUn_gl000213,length=164239>
+##contig=<ID=chrUn_gl000214,length=137718>
+##contig=<ID=chrUn_gl000215,length=172545>
+##contig=<ID=chrUn_gl000216,length=172294>
+##contig=<ID=chrUn_gl000217,length=172149>
+##contig=<ID=chrUn_gl000218,length=161147>
+##contig=<ID=chrUn_gl000219,length=179198>
+##contig=<ID=chrUn_gl000220,length=161802>
+##contig=<ID=chrUn_gl000221,length=155397>
+##contig=<ID=chrUn_gl000222,length=186861>
+##contig=<ID=chrUn_gl000223,length=180455>
+##contig=<ID=chrUn_gl000224,length=179693>
+##contig=<ID=chrUn_gl000225,length=211173>
+##contig=<ID=chrUn_gl000226,length=15008>
+##contig=<ID=chrUn_gl000227,length=128374>
+##contig=<ID=chrUn_gl000228,length=129120>
+##contig=<ID=chrUn_gl000229,length=19913>
+##contig=<ID=chrUn_gl000230,length=43691>
+##contig=<ID=chrUn_gl000231,length=27386>
+##contig=<ID=chrUn_gl000232,length=40652>
+##contig=<ID=chrUn_gl000233,length=45941>
+##contig=<ID=chrUn_gl000234,length=40531>
+##contig=<ID=chrUn_gl000235,length=34474>
+##contig=<ID=chrUn_gl000236,length=41934>
+##contig=<ID=chrUn_gl000237,length=45867>
+##contig=<ID=chrUn_gl000238,length=39939>
+##contig=<ID=chrUn_gl000239,length=33824>
+##contig=<ID=chrUn_gl000240,length=41933>
+##contig=<ID=chrUn_gl000241,length=42152>
+##contig=<ID=chrUn_gl000242,length=43523>
+##contig=<ID=chrUn_gl000243,length=43341>
+##contig=<ID=chrUn_gl000244,length=39929>
+##contig=<ID=chrUn_gl000245,length=36651>
+##contig=<ID=chrUn_gl000246,length=38154>
+##contig=<ID=chrUn_gl000247,length=36422>
+##contig=<ID=chrUn_gl000248,length=39786>
+##contig=<ID=chrUn_gl000249,length=38502>
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NORMAL	TUMOR
+chr11	51567293	.	C	T	.	PASS	QSS=841;TQSS=1;NT=ref;QSS_NT=47;TQSS_NT=2;SGT=CC->CT;SOMATIC;DP=1510;MQ=32.7;MQ0=344;ReadPosRankSum=1.78;SNVSB=0.0;SomaticEVS=7.99	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	144:2:0:0:0,0:138,152:0,0:4,55	572:104:0:0:2,8:64,96:0,1:402,1197
+chr11	67672768	.	C	A	.	PASS	QSS=101;TQSS=2;NT=ref;QSS_NT=101;TQSS_NT=2;SGT=CC->AC;SOMATIC;DP=171;MQ=24.21;MQ0=32;ReadPosRankSum=0.0;SNVSB=0.0;SomaticEVS=10.19	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	92:0:0:0:10,23:82,115:0,0:0,0	23:1:0:0:18,22:4,11:0,0:0,0
+chr11	67672769	.	A	G	.	PASS	QSS=99;TQSS=2;NT=ref;QSS_NT=99;TQSS_NT=2;SGT=AA->AG;SOMATIC;DP=173;MQ=24.37;MQ0=32;ReadPosRankSum=0.0;SNVSB=0.0;SomaticEVS=10.19	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	94:0:0:0:84,117:0,0:10,23:0,0	23:1:0:0:4,11:0,0:18,21:0,0
+chr15	53428824	.	T	C	.	PASS	QSS=42;TQSS=2;NT=ref;QSS_NT=42;TQSS_NT=2;SGT=TT->CT;SOMATIC;DP=364;MQ=23.65;MQ0=100;ReadPosRankSum=-0.96;SNVSB=0.0;SomaticEVS=9.4	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	95:0:0:0:0,0:9,40:0,0:86,129	70:1:0:0:0,0:57,91:0,0:12,104
+chr17	72857387	.	C	T	.	PASS	QSS=267;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=CC->CT;SOMATIC;DP=145;MQ=60.0;MQ0=0;ReadPosRankSum=0.71;SNVSB=0.0;SomaticEVS=19.69	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	116:2:0:0:1,1:113,116:0,0:0,0	27:1:0:0:0,1:4,4:0,0:22,23
+chr18	18519731	.	A	G	.	PASS	QSS=1174;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AG;SOMATIC;DP=10726;MQ=27.85;MQ0=1872;ReadPosRankSum=13.42;SNVSB=0.0;SomaticEVS=7.55	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	1191:901:3:0:238,2372:0,0:51,241:1,1	3051:952:8:0:277,3292:0,5:1821,4802:1,5
+chr1	17193711	.	G	A	.	PASS	QSS=267;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=GG->AG;SOMATIC;DP=169;MQ=39.29;MQ0=22;ReadPosRankSum=-0.54;SNVSB=0.0;SomaticEVS=11.33	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	102:0:0:0:0,0:0,0:102,134:0,0	25:0:0:0:22,27:0,0:3,8:0,0
+chr1	121481200	.	C	T	.	PASS	QSS=865;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=CC->CT;SOMATIC;DP=3546;MQ=18.57;MQ0=1644;ReadPosRankSum=-5.96;SNVSB=0.0;SomaticEVS=8.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	152:3:0:0:0,3:149,1472:0,4:0,4	643:74:0:0:0,4:113,785:2,6:454,1264
+chr22	22648850	.	G	C	.	PASS	QSS=169;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=GG->CG;SOMATIC;DP=255;MQ=26.18;MQ0=59;ReadPosRankSum=-0.47;SNVSB=0.0;SomaticEVS=10.2	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	114:1:0:0:0,0:8,12:105,189:0,0	22:0:0:0:0,0:18,34:4,19:0,0
+chr2	91661410	.	T	A	.	PASS	QSS=79;TQSS=2;NT=ref;QSS_NT=79;TQSS_NT=2;SGT=TT->AT;SOMATIC;DP=748;MQ=17.73;MQ0=367;ReadPosRankSum=0.09;SNVSB=0.0;SomaticEVS=9.93	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	186:6:0:0:31,50:0,0:0,1:149,361	74:4:0:0:57,94:0,2:0,0:13,218
+chr2	91661420	.	T	C	.	PASS	QSS=91;TQSS=2;NT=ref;QSS_NT=91;TQSS_NT=2;SGT=TT->CT;SOMATIC;DP=765;MQ=16.9;MQ0=412;ReadPosRankSum=-0.89;SNVSB=0.0;SomaticEVS=10.0	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	169:7:0:0:0,0:30,55:0,0:132,349	66:3:0:0:0,1:55,107:0,2:8,207
+chr2	160461592	.	G	A	.	PASS	QSS=223;TQSS=2;NT=ref;QSS_NT=102;TQSS_NT=2;SGT=GG->AG;SOMATIC;DP=279;MQ=41.55;MQ0=15;ReadPosRankSum=1.28;SNVSB=0.0;SomaticEVS=11.76	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	92:0:0:0:2,26:0,0:90,93:0,0	90:0:0:0:72,136:0,0:18,24:0,0
+chr7	61769502	.	T	C	.	PASS	QSS=175;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=TT->CT;SOMATIC;DP=222;MQ=32.55;MQ0=23;ReadPosRankSum=3.03;SNVSB=0.0;SomaticEVS=10.64	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	115:0:0:0:0,0:7,27:1,1:107,121	52:2:1:0:0,0:40,54:0,1:10,15
+chr8	9500862	.	G	C	.	PASS	QSS=338;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=GG->CG;SOMATIC;DP=156;MQ=60.0;MQ0=0;ReadPosRankSum=-0.82;SNVSB=0.0;SomaticEVS=19.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	89:1:0:0:0,0:0,0:87,89:1,1	62:1:0:0:0,0:56,60:5,5:0,0
+chrX	10138733	.	A	C	.	PASS	QSS=224;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AC;SOMATIC;DP=116;MQ=60.0;MQ0=0;ReadPosRankSum=0.0;SNVSB=0.0;SomaticEVS=19.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	94:0:0:0:94,94:0,0:0,0:0,0	22:0:0:0:4,4:17,17:1,1:0,0
+chrX	11863945	.	A	G	.	PASS	QSS=224;TQSS=1;NT=ref;QSS_NT=93;TQSS_NT=1;SGT=AA->AG;SOMATIC;DP=378;MQ=23.35;MQ0=129;ReadPosRankSum=-2.21;SNVSB=0.0;SomaticEVS=7.16	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	33:0:0:0:31,79:0,0:2,15:0,0	99:2:0:0:7,81:0,0:90,202:0,0
+chrX	11863949	.	C	A	.	PASS	QSS=196;TQSS=2;NT=ref;QSS_NT=96;TQSS_NT=1;SGT=CC->AC;SOMATIC;DP=385;MQ=23.29;MQ0=134;ReadPosRankSum=-2.64;SNVSB=0.0;SomaticEVS=7.11	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	34:0:0:0:2,15:32,77:0,0:0,0	100:4:0:0:88,201:8,92:0,0:0,0
+chrX	16436923	.	C	A	.	PASS	QSS=230;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=CC->AC;SOMATIC;DP=112;MQ=60.0;MQ0=0;ReadPosRankSum=-0.18;SNVSB=0.0;SomaticEVS=19.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	75:2:0:0:0,0:73,75:0,0:0,0	36:0:0:0:29,30:7,7:0,0:0,0
+chrX	24490063	.	A	T	.	PASS	QSS=251;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AT;SOMATIC;DP=138;MQ=60.0;MQ0=0;ReadPosRankSum=-1.01;SNVSB=0.0;SomaticEVS=19.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	67:1:0:0:66,67:0,0:0,0:0,0	62:0:0:0:9,12:0,0:0,0:53,59
+chrX	30900996	.	A	G	.	PASS	QSS=229;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AG;SOMATIC;DP=107;MQ=60.0;MQ0=0;ReadPosRankSum=2.39;SNVSB=0.0;SomaticEVS=19.74	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	66:0:0:0:66,67:0,0:0,0:0,0	39:0:0:0:5,5:0,0:34,35:0,0
+chrX	34387271	.	A	G	.	PASS	QSS=187;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AG;SOMATIC;DP=115;MQ=59.63;MQ0=0;ReadPosRankSum=-1.2;SNVSB=0.0;SomaticEVS=18.02	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	54:0:0:0:54,54:0,0:0,0:0,0	49:0:0:0:9,12:0,0:40,49:0,0
+chrX	58565109	.	A	C	.	PASS	QSS=565;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AC;SOMATIC;DP=968;MQ=21.62;MQ0=364;ReadPosRankSum=-1.75;SNVSB=0.0;SomaticEVS=10.1	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	78:0:0:0:78,87:0,18:0,0:0,0	275:3:1:0:33,78:235,774:0,1:4,9
+chrX	58565587	.	C	G	.	PASS	QSS=196;TQSS=1;NT=ref;QSS_NT=151;TQSS_NT=1;SGT=CC->CG;SOMATIC;DP=4931;MQ=6.95;MQ0=4475;ReadPosRankSum=3.45;SNVSB=0.0;SomaticEVS=7.47	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	42:1:0:0:0,4:41,655:0,204:0,1	124:57:3:0:0,38:8,2192:59,1824:0,3
+chrX	58565596	.	T	C	.	PASS	QSS=409;TQSS=1;NT=ref;QSS_NT=38;TQSS_NT=2;SGT=TT->CT;SOMATIC;DP=6512;MQ=7.78;MQ0=5873;ReadPosRankSum=1.52;SNVSB=0.0;SomaticEVS=7.75	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	41:1:5:0:0,5:0,246:0,13:40,600	233:26:18:0:0,31:194,3431:2,40:11,2127
+chrX	58565657	.	C	A	.	PASS	QSS=485;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=CC->AC;SOMATIC;DP=1659;MQ=20.31;MQ0=899;ReadPosRankSum=-4.75;SNVSB=0.0;SomaticEVS=8.28	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	53:1:0:0:0,38:52,209:0,0:0,0	419:58:3:0:329,1257:32,147:0,0:0,2
+chrX	58565660	.	C	T	.	PASS	QSS=492;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=CC->CT;SOMATIC;DP=1489;MQ=21.32;MQ0=739;ReadPosRankSum=-5.89;SNVSB=0.0;SomaticEVS=8.28	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	53:1:0:0:0,0:52,350:0,0:0,14	406:59:0:0:0,0:28,165:0,1:319,951
+chrX	58565664	.	C	A	.	PASS	QSS=397;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=CC->AC;SOMATIC;DP=1335;MQ=22.36;MQ0=604;ReadPosRankSum=-6.0;SNVSB=0.0;SomaticEVS=8.28	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	53:1:0:0:0,6:52,358:0,0:0,1	397:63:0:0:281,716:53,246:0,1:0,4
+chrX	61874678	.	A	T	.	PASS	QSS=497;TQSS=1;NT=ref;QSS_NT=52;TQSS_NT=2;SGT=AA->AT;SOMATIC;DP=1586;MQ=24.48;MQ0=588;ReadPosRankSum=9.15;SNVSB=0.0;SomaticEVS=8.27	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	77:7:0:0:70,286:0,1:0,2:0,117	383:38:0:0:54,233:1,2:0,1:290,930
+chrX	61999120	.	C	G	.	PASS	QSS=224;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=CC->CG;SOMATIC;DP=118;MQ=58.4;MQ0=2;ReadPosRankSum=0.92;SNVSB=0.0;SomaticEVS=13.56	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	72:0:0:0:0,0:72,74:0,0:0,0	32:0:0:0:0,0:6,12:26,32:0,0
+chrX	66158146	.	T	G	.	PASS	QSS=186;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=TT->GT;SOMATIC;DP=90;MQ=60.0;MQ0=0;ReadPosRankSum=1.59;SNVSB=0.0;SomaticEVS=19.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	61:0:0:0:0,0:0,0:0,0:61,61	28:0:0:0:0,0:0,0:23,23:5,6
+chrX	85661585	.	A	G	.	PASS	QSS=279;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AG;SOMATIC;DP=122;MQ=60.0;MQ0=0;ReadPosRankSum=-0.4;SNVSB=0.0;SomaticEVS=19.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	78:0:0:0:78,80:0,0:0,0:0,0	41:0:0:0:4,4:0,0:37,38:0,0
+chrX	91270138	.	T	C	.	PASS	QSS=213;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=TT->CT;SOMATIC;DP=118;MQ=43.87;MQ0=13;ReadPosRankSum=-0.75;SNVSB=0.0;SomaticEVS=11.2	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	73:0:0:0:0,0:0,0:0,0:73,81	26:1:0:0:0,0:20,30:0,0:5,7
+chrX	91968205	.	G	A	.	PASS	QSS=247;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=GG->AG;SOMATIC;DP=121;MQ=46.44;MQ0=3;ReadPosRankSum=-0.75;SNVSB=0.0;SomaticEVS=13.12	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	79:0:0:0:0,0:0,0:79,81:0,0	33:0:0:0:27,34:0,0:6,6:0,0
+chrX	108805802	.	G	T	.	PASS	QSS=261;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=GG->GT;SOMATIC;DP=128;MQ=60.0;MQ0=0;ReadPosRankSum=-0.67;SNVSB=0.0;SomaticEVS=14.81	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	79:1:0:0:0,0:0,0:78,82:0,0	43:6:0:0:0,0:0,0:5,7:32,34
+chrX	118986843	.	A	T	.	PASS	QSS=193;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AT;SOMATIC;DP=94;MQ=60.0;MQ0=0;ReadPosRankSum=1.57;SNVSB=0.0;SomaticEVS=19.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	71:0:0:0:70,71:1,1:0,0:0,0	21:0:0:0:4,4:0,0:0,0:17,18
+chrX	120004375	.	A	C	.	PASS	QSS=170;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AC;SOMATIC;DP=85;MQ=59.73;MQ0=0;ReadPosRankSum=-0.67;SNVSB=0.0;SomaticEVS=18.02	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	63:0:0:0:62,64:0,0:1,1:0,1	19:0:0:0:3,3:16,16:0,0:0,0
+chrX	121457593	.	T	G	.	PASS	QSS=189;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=TT->GT;SOMATIC;DP=133;MQ=59.99;MQ0=0;ReadPosRankSum=-0.43;SNVSB=0.0;SomaticEVS=17.62	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	52:0:0:0:0,0:0,0:0,0:52,54	63:1:0:0:0,0:0,1:50,60:12,14
+chrX	129351805	.	G	C	.	PASS	QSS=242;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=GG->CG;SOMATIC;DP=119;MQ=60.0;MQ0=0;ReadPosRankSum=0.6;SNVSB=0.0;SomaticEVS=19.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	75:0:0:0:0,0:0,0:75,76:0,0	39:0:0:0:0,0:32,35:7,8:0,0
+chrX	134292074	.	A	G	.	PASS	QSS=257;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AG;SOMATIC;DP=121;MQ=59.94;MQ0=0;ReadPosRankSum=-0.62;SNVSB=0.0;SomaticEVS=17.62	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	76:2:0:0:74,79:0,0:0,0:0,0	41:0:0:0:5,5:0,0:36,37:0,0
+chrX	136770995	.	G	A	.	PASS	QSS=210;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=GG->AG;SOMATIC;DP=97;MQ=60.0;MQ0=0;ReadPosRankSum=1.39;SNVSB=0.0;SomaticEVS=19.73	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	66:0:0:0:0,0:0,0:66,67:0,0	30:0:0:0:25,25:0,0:5,5:0,0
+chrY	3653308	.	G	A	.	PASS	QSS=73;TQSS=2;NT=ref;QSS_NT=72;TQSS_NT=2;SGT=GG->AG;SOMATIC;DP=150;MQ=42.18;MQ0=11;ReadPosRankSum=-3.16;SNVSB=0.0;SomaticEVS=11.6	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	83:0:0:0:4,20:0,0:79,83:0,0	26:0:0:0:21,36:0,0:5,11:0,0
+chrY	5995250	.	G	A	.	PASS	QSS=40;TQSS=2;NT=ref;QSS_NT=40;TQSS_NT=2;SGT=GG->AG;SOMATIC;DP=101;MQ=43.62;MQ0=0;ReadPosRankSum=1.97;SNVSB=0.0;SomaticEVS=11.58	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	72:1:0:0:6,18:0,0:65,67:0,0	13:0:0:0:11,14:0,0:2,2:0,0
+chrY	5995251	.	C	A	.	PASS	QSS=42;TQSS=2;NT=ref;QSS_NT=42;TQSS_NT=2;SGT=CC->AC;SOMATIC;DP=101;MQ=43.62;MQ0=0;ReadPosRankSum=1.97;SNVSB=0.0;SomaticEVS=12.56	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	72:1:0:0:6,18:65,67:0,0:0,0	13:0:0:0:11,14:2,2:0,0:0,0
+chrY	6486643	.	G	C	.	PASS	QSS=65;TQSS=2;NT=ref;QSS_NT=65;TQSS_NT=2;SGT=GG->CG;SOMATIC;DP=116;MQ=51.8;MQ0=4;ReadPosRankSum=-0.86;SNVSB=0.0;SomaticEVS=13.11	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	88:1:0:0:0,0:9,19:78,80:0,0	12:0:0:0:0,0:10,14:2,3:0,0
+chrY	6502955	.	G	A	.	PASS	QSS=149;TQSS=2;NT=ref;QSS_NT=149;TQSS_NT=2;SGT=GG->AG;SOMATIC;DP=106;MQ=48.93;MQ0=1;ReadPosRankSum=-1.16;SNVSB=0.0;SomaticEVS=13.07	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	66:0:0:0:0,7:0,0:66,66:0,0	18:0:0:0:17,29:0,0:1,4:0,0
+chrY	9930525	.	G	A	.	PASS	QSS=83;TQSS=2;NT=ref;QSS_NT=83;TQSS_NT=2;SGT=GG->AG;SOMATIC;DP=184;MQ=44.38;MQ0=20;ReadPosRankSum=1.49;SNVSB=0.0;SomaticEVS=8.9	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	82:1:0:0:9,17:0,0:72,100:0,0	34:5:0:0:25,31:0,0:4,36:0,0
+chrY	9930540	.	G	C	.	PASS	QSS=78;TQSS=2;NT=ref;QSS_NT=78;TQSS_NT=2;SGT=GG->CG;SOMATIC;DP=184;MQ=44.93;MQ0=20;ReadPosRankSum=-0.07;SNVSB=0.0;SomaticEVS=11.2	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	82:1:0:0:0,4:8,17:73,96:0,0	36:2:0:0:0,8:28,31:6,28:0,0
+chrY	9976214	.	C	T	.	PASS	QSS=192;TQSS=1;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=CC->CT;SOMATIC;DP=342;MQ=41.71;MQ0=53;ReadPosRankSum=1.58;SNVSB=0.0;SomaticEVS=9.76	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	106:16:0:0:0,0:81,120:0,0:9,18	99:10:0:0:0,0:17,43:0,0:72,128
+chrY	9976244	.	A	T	.	PASS	QSS=169;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=AA->AT;SOMATIC;DP=354;MQ=39.41;MQ0=59;ReadPosRankSum=-1.18;SNVSB=0.0;SomaticEVS=8.75	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	112:3:0:0:100,153:0,0:0,0:9,29	78:16:0:0:12,50:0,0:0,0:50,91
+chrY	9980942	.	T	G	.	PASS	QSS=123;TQSS=1;NT=ref;QSS_NT=112;TQSS_NT=2;SGT=TT->GT;SOMATIC;DP=139;MQ=42.06;MQ0=20;ReadPosRankSum=-1.9;SNVSB=0.0;SomaticEVS=8.48	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	51:0:0:0:0,0:0,0:2,8:49,50	32:14:0:0:0,1:0,0:16,54:2,2
+chrY	9989179	.	G	A	.	PASS	QSS=140;TQSS=2;NT=ref;QSS_NT=133;TQSS_NT=2;SGT=GG->AG;SOMATIC;DP=157;MQ=47.57;MQ0=9;ReadPosRankSum=-1.03;SNVSB=0.0;SomaticEVS=9.45	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	82:1:0:0:7,14:0,0:74,81:0,0	31:4:0:0:22,46:0,0:5,10:0,0
+chrY	9993880	.	C	A	.	PASS	QSS=65;TQSS=2;NT=ref;QSS_NT=65;TQSS_NT=2;SGT=CC->AC;SOMATIC;DP=153;MQ=47.94;MQ0=26;ReadPosRankSum=-1.41;SNVSB=0.0;SomaticEVS=11.31	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	91:0:0:0:7,13:84,91:0,0:0,0	16:0:0:0:13,16:3,31:0,0:0,2
+chrY	9994457	.	T	C	.	PASS	QSS=196;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=TT->CT;SOMATIC;DP=116;MQ=51.48;MQ0=8;ReadPosRankSum=-1.68;SNVSB=0.0;SomaticEVS=11.6	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	69:0:0:0:0,0:0,3:0,0:69,72	19:0:0:0:0,0:16,34:0,0:3,7
+chrY	10005527	.	A	G	.	PASS	QSS=97;TQSS=2;NT=ref;QSS_NT=93;TQSS_NT=2;SGT=AA->AG;SOMATIC;DP=135;MQ=43.45;MQ0=16;ReadPosRankSum=-1.39;SNVSB=0.0;SomaticEVS=10.15	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	61:0:0:0:57,61:0,0:4,13:0,0	29:3:0:0:4,11:0,0:22,44:0,0
+chrY	10010289	.	A	G	.	PASS	QSS=139;TQSS=2;NT=ref;QSS_NT=139;TQSS_NT=2;SGT=AA->AG;SOMATIC;DP=142;MQ=55.34;MQ0=1;ReadPosRankSum=1.18;SNVSB=0.0;SomaticEVS=11.91	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	94:0:0:0:86,106:0,0:8,9:0,0	22:2:2:0:4,9:0,0:16,18:0,0
+chrY	10029711	.	A	C	.	PASS	QSS=119;TQSS=2;NT=ref;QSS_NT=52;TQSS_NT=2;SGT=AA->AC;SOMATIC;DP=201;MQ=46.89;MQ0=9;ReadPosRankSum=-2.06;SNVSB=0.0;SomaticEVS=8.79	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	88:3:0:0:80,82:5,26:0,0:0,0	55:19:0:0:7,10:29,72:0,2:0,0
+chrY	10062901	.	T	A	.	PASS	QSS=40;TQSS=2;NT=ref;QSS_NT=35;TQSS_NT=2;SGT=TT->AT;SOMATIC;DP=137;MQ=43.39;MQ0=17;ReadPosRankSum=-0.19;SNVSB=0.0;SomaticEVS=7.56	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	59:1:0:0:1,26:0,0:0,0:57,60	25:5:0:0:16,41:0,0:0,0:4,7
+chrY	10070416	.	C	T	.	PASS	QSS=154;TQSS=2;NT=ref;QSS_NT=50;TQSS_NT=2;SGT=CC->CT;SOMATIC;DP=196;MQ=37.98;MQ0=68;ReadPosRankSum=-0.61;SNVSB=0.0;SomaticEVS=10.27	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	60:0:0:0:0,1:60,64:0,0:0,27	29:0:0:0:0,0:5,10:0,0:24,94
+chrY	10070461	.	T	G	.	PASS	QSS=106;TQSS=2;NT=ref;QSS_NT=69;TQSS_NT=2;SGT=TT->GT;SOMATIC;DP=173;MQ=40.46;MQ0=49;ReadPosRankSum=-2.99;SNVSB=0.0;SomaticEVS=8.89	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	58:0:0:0:0,0:0,0:0,23:58,61	29:4:0:0:0,0:0,0:20,63:5,9
+chrY	13247677	.	C	A	.	PASS	QSS=68;TQSS=2;NT=ref;QSS_NT=68;TQSS_NT=2;SGT=CC->AC;SOMATIC;DP=168;MQ=35.35;MQ0=51;ReadPosRankSum=0.74;SNVSB=0.0;SomaticEVS=11.05	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	83:2:0:0:8,19:73,87:0,0:0,0	25:0:0:0:21,30:4,32:0,0:0,0
+chrY	13250215	.	G	A	.	PASS	QSS=177;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=GG->AG;SOMATIC;DP=128;MQ=45.88;MQ0=8;ReadPosRankSum=1.46;SNVSB=0.0;SomaticEVS=11.71	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	77:0:0:0:2,9:0,0:75,77:0,0	33:0:0:0:27,33:0,0:4,7:2,2
+chrY	13254809	.	C	T	.	PASS	QSS=60;TQSS=2;NT=ref;QSS_NT=49;TQSS_NT=2;SGT=CC->CT;SOMATIC;DP=110;MQ=50.14;MQ0=4;ReadPosRankSum=0.0;SNVSB=0.0;SomaticEVS=11.56	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	75:1:0:0:0,0:63,65:0,0:11,17	15:1:1:0:0,0:0,2:0,0:14,26
+chrY	13335506	.	A	T	.	PASS	QSS=37;TQSS=2;NT=ref;QSS_NT=37;TQSS_NT=2;SGT=AA->AT;SOMATIC;DP=265;MQ=28.74;MQ0=82;ReadPosRankSum=-1.86;SNVSB=0.0;SomaticEVS=8.82	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	94:2:0:0:82,119:0,0:0,0:10,34	46:2:0:0:7,59:0,0:0,0:37,53
+chrY	13387519	.	C	T	.	PASS	QSS=47;TQSS=2;NT=ref;QSS_NT=47;TQSS_NT=2;SGT=CC->CT;SOMATIC;DP=195;MQ=33.77;MQ0=73;ReadPosRankSum=1.09;SNVSB=0.0;SomaticEVS=9.86	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	61:0:0:0:0,0:53,56:0,0:8,10	48:2:0:0:0,0:6,58:0,0:40,70
+chrY	13511202	.	A	C	.	PASS	QSS=57;TQSS=2;NT=ref;QSS_NT=30;TQSS_NT=2;SGT=AA->AC;SOMATIC;DP=123;MQ=45.51;MQ0=4;ReadPosRankSum=0.56;SNVSB=0.0;SomaticEVS=9.82	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	62:0:0:0:52,53:10,16:0,0:0,0	28:1:0:0:2,6:25,46:0,0:0,0
+chrY	13532820	.	C	T	.	PASS	QSS=124;TQSS=2;NT=ref;QSS_NT=54;TQSS_NT=2;SGT=CC->CT;SOMATIC;DP=275;MQ=31.37;MQ0=76;ReadPosRankSum=-1.98;SNVSB=0.0;SomaticEVS=9.86	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	70:0:0:0:0,1:66,75:0,0:4,23	54:2:0:0:0,0:8,39:0,0:44,129
+chrY	13555727	.	T	A	.	PASS	QSS=170;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=TT->AT;SOMATIC;DP=128;MQ=45.72;MQ0=6;ReadPosRankSum=0.0;SNVSB=0.0;SomaticEVS=12.12	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	90:0:0:0:3,13:0,0:0,0:87,90	14:0:0:0:14,22:0,0:0,0:0,3
+chrY	13555729	.	G	A	.	PASS	QSS=170;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=GG->AG;SOMATIC;DP=128;MQ=45.72;MQ0=6;ReadPosRankSum=0.0;SNVSB=0.0;SomaticEVS=12.12	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	90:0:0:0:3,13:0,0:87,90:0,0	14:0:0:0:14,22:0,0:0,3:0,0
+chrY	13626877	.	A	T	.	PASS	QSS=42;TQSS=2;NT=ref;QSS_NT=42;TQSS_NT=2;SGT=AA->AT;SOMATIC;DP=131;MQ=49.81;MQ0=8;ReadPosRankSum=-2.68;SNVSB=0.0;SomaticEVS=10.79	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	84:1:0:0:73,73:0,0:0,0:10,23	29:0:0:0:5,5:0,0:0,0:24,29
+chrY	13682641	.	G	C	.	PASS	QSS=88;TQSS=2;NT=ref;QSS_NT=61;TQSS_NT=2;SGT=GG->CG;SOMATIC;DP=527;MQ=25.55;MQ0=178;ReadPosRankSum=-2.33;SNVSB=0.0;SomaticEVS=7.96	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	53:3:0:0:0,7:0,25:50,104:0,4	104:25:0:0:3,19:62,202:12,139:2,27
+chrY	13903202	.	A	G	.	PASS	QSS=34;TQSS=2;NT=ref;QSS_NT=34;TQSS_NT=2;SGT=AA->AG;SOMATIC;DP=104;MQ=52.87;MQ0=0;ReadPosRankSum=0.89;SNVSB=0.0;SomaticEVS=10.84	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	75:0:0:0:66,66:0,0:9,17:0,0	19:1:0:0:3,3:0,0:15,18:0,0
+chrY	14766644	.	A	T	.	PASS	QSS=127;TQSS=2;NT=ref;QSS_NT=125;TQSS_NT=2;SGT=AA->AT;SOMATIC;DP=99;MQ=45.3;MQ0=4;ReadPosRankSum=-2.46;SNVSB=0.0;SomaticEVS=9.56	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	42:0:0:0:42,42:0,0:0,0:0,2	22:3:0:0:3,10:0,0:0,0:16,41
+chrY	21801489	.	T	A	.	PASS	QSS=183;TQSS=2;NT=ref;QSS_NT=3070;TQSS_NT=1;SGT=TT->AT;SOMATIC;DP=139;MQ=51.22;MQ0=0;ReadPosRankSum=2.86;SNVSB=0.0;SomaticEVS=11.98	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	87:0:0:0:0,11:0,0:0,0:87,88	28:0:0:0:24,35:0,0:0,0:4,5
+chrY	22811820	.	G	T	.	PASS	QSS=146;TQSS=1;NT=ref;QSS_NT=97;TQSS_NT=2;SGT=GG->GT;SOMATIC;DP=167;MQ=51.28;MQ0=4;ReadPosRankSum=-1.95;SNVSB=0.0;SomaticEVS=13.12	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	83:0:0:0:0,0:0,0:74,74:9,14	52:1:0:0:0,0:0,0:9,10:42,68
+chrY	28550616	.	G	A	.	PASS	QSS=35;TQSS=2;NT=ref;QSS_NT=34;TQSS_NT=2;SGT=GG->AG;SOMATIC;DP=126;MQ=36.87;MQ0=19;ReadPosRankSum=0.0;SNVSB=0.0;SomaticEVS=8.55	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	80:0:0:0:14,24:0,0:66,83:0,0	13:0:0:0:13,18:0,0:0,1:0,0
+chrY	28604414	.	A	T	.	PASS	QSS=145;TQSS=2;NT=ref;QSS_NT=109;TQSS_NT=2;SGT=AA->AT;SOMATIC;DP=130;MQ=48.58;MQ0=4;ReadPosRankSum=2.12;SNVSB=0.0;SomaticEVS=13.14	DP:FDP:SDP:SUBDP:AU:CU:GU:TU	64:0:0:0:63,63:0,0:0,0:1,11	31:0:0:0:4,6:0,0:0,0:27,50
